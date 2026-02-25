@@ -1,0 +1,204 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    font-size: larger;
+}
+
+/*main nav container*/
+.container-fluid {
+    background-color: rgb(59, 7, 57);
+    display: flex;
+    justify-content: flex-end; /*aligns links at the very end of nav bar*/
+    align-items: center;
+}
+
+footer {
+    background-color: #4BFEE3;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Removing the annoying gap between the nav bar and content below it*/
+.navbar {
+    padding: 0 !important;
+}
+
+
+/*LOGO TEXT "Foodies & Co."*/
+.navbar-brand {
+    color: white !important;
+}
+
+/*Nav bar text*/
+.nav-link {
+    color: white !important;
+}
+
+
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/lamby.jpg");
+
+  /* Set a specific height */
+  height: 70%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #4BFEE3;
+  color: rgb(59, 7, 57);
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+/* The hero image */
+.app-download {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/lamby.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.download-app {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(59, 7, 57);
+    background-image: url("images/appicon.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 90% center;
+    color: white;
+    border-radius: 200px;
+    padding: 5%;
+}
+
+.dl-button {
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #4BFEE3;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 700px) {
+    .download-app {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+.carousel {
+    margin: 100px auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.c-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 30s infinite linear;
+    padding-right: 1em;
+}
+
+
+.cardy {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: 0em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+.cardy img {
+    width: 200px;
+    height: 200px;
+}

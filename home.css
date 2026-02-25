@@ -16,6 +16,12 @@ p {
     align-items: center;
 }
 
+footer {
+    background-color: #4BFEE3;
+    font-weight: bold;
+    padding: 20px;
+}
+
 /*Removing the annoying gap between the nav bar and content below it*/
 .navbar {
     padding: 0 !important;
@@ -181,7 +187,6 @@ form.example::after {
     flex: 0 0 5em;
     height: 5em;
     padding: 1em;
-    background-color: blue;
     font-size: 3rem;
     border-radius: 0em;
     text-align: center;
@@ -193,3 +198,7 @@ form.example::after {
     to {translate: -100%;}
 }
 
+.cardy img {
+    width: 200px;
+    height: 200px;
+}

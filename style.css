@@ -92,3 +92,36 @@ button {
     padding: 100%;
     margin: 100%;
 }
+
+
+
+
+
+/*.container {
+    display: flex;
+}*/
+
+header {
+    flex: 1;
+    background-color: orange;
+    border-radius: 2em;
+}
+
+section {
+    flex: 4;
+    gap: 1em;
+    border-radius: 2em;
+    display: flex;
+}
+
+.col-left {
+    flex: 2;
+    background-color: rgb(97, 97, 218);
+    border-radius: 2em;
+}
+
+.col-right {
+    flex: 1;
+    background-color: rgb(73, 153, 73);
+    border-radius: 2em;
+}

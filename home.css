@@ -4,14 +4,31 @@ html, body {
     height: 100%;
 }
 
+/*main nav container*/
 .container-fluid {
-    height: 100px;
-    background-color: #4BFEE3;
+    background-color: rgb(59, 7, 57);
     display: flex;
     justify-content: flex-end; /*aligns links at the very end of nav bar*/
     align-items: center;
-    margin-top: 0;
 }
+
+/*Removing the annoying gap between the nav bar and content below it*/
+.navbar {
+    padding: 0 !important;
+}
+
+
+/*LOGO TEXT "Foodies & Co."*/
+.navbar-brand {
+    color: white !important;
+}
+
+/*Nav bar text*/
+.nav-link {
+    color: white !important;
+}
+
+
 
 
 /* The hero image */
@@ -20,7 +37,7 @@ html, body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/lamby.jpg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 70%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -59,8 +76,8 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
-  color: white;
+  background: #4BFEE3;
+  color: rgb(59, 7, 57);
   font-size: 17px;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */

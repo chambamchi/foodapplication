@@ -32,9 +32,6 @@ main {
     margin: 0;
 }
 
-body {
-    background-color: rgb(59, 7, 57);
-}
 
 
 footer {
@@ -47,6 +44,8 @@ footer {
 h1 {
     text-align: center;
 }
+
+
 
 
 

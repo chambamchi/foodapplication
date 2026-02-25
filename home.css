@@ -4,6 +4,10 @@ html, body {
     height: 100%;
 }
 
+p {
+    font-size: larger;
+}
+
 /*main nav container*/
 .container-fluid {
     background-color: rgb(59, 7, 57);
@@ -44,6 +48,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin-bottom: 100px;
 }
 
 /* Place text in the middle of the image */
@@ -56,9 +61,6 @@ html, body {
   color: white;
   text-decoration: underline;
 }
-
-
-
 
 
 /* Style the search field */
@@ -94,3 +96,100 @@ form.example::after {
   clear: both;
   display: table;
 }
+
+
+
+
+
+
+
+
+
+/* The hero image */
+.app-download {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/lamby.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.download-app {
+    width: 90%;
+    margin: auto;
+    background-color: rgb(59, 7, 57);
+    background-image: url("images/appicon.png");
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 90% center;
+    color: white;
+    border-radius: 200px;
+    padding: 5%;
+}
+
+.dl-button {
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #4BFEE3;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 700px) {
+    .download-app {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+.carousel {
+    margin: 100px auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+
+.c-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 30s infinite linear;
+    padding-right: 1em;
+}
+
+
+.cardy {
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background-color: blue;
+    font-size: 3rem;
+    border-radius: 0em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+

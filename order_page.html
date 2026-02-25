@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="order_page.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to make page responsive -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <title>Foodies</title>
+    </head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/cutlery2.png" alt="" width="100"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<main>
+    
+    <h1 style="text-align: center;">
+        <img src="images/Popeyes_logo_(alt).svg" width="300">
+    </h1>
+    <h2 style="text-align: center;">
+        <span class="badge text-bg-secondary">Checkout Page</span>
+    </h2>
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Kickback Sandwich Box Meal
+                </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row align-items-center g-3">
+                        <!-- Image -->
+                        <div class="col-12 col-md-auto">
+                            <img src="images/kickback_sandwich_boxmeal.png" class="item-img" alt="Kickback Sandwich Box Meal" width="200">
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-12 col-md">
+                            <p class="mb-1 fw-semibold">Kickback Sandwich Box Meal</p>
+                            <p class="mb-0 text-muted">
+                                Kickback Sandwich with a choice of 2 Tenders, 3 Hot Wings or 4 Boneless.
+                                Served with regular Fries, a regular drink & a Kickback dip.
+                            </p>
+                        </div>
+
+                        <!-- Price + Controls -->
+                        <div class="col-12 col-md-auto text-md-end">
+                            <div class="fw-bold fs-5 mb-2">£12.99</div>
+
+                            <div class="d-flex justify-content-md-end align-items-center gap-2">
+                                <!-- Quantity controls -->
+                                <div class="btn-group" role="group" aria-label="Quantity controls">
+                                <button type="button" class="btn btn-outline-dark btn-sm">−</button>
+                                <button type="button" class="btn btn-light btn-sm" disabled>1</button>
+                                <button type="button" class="btn btn-outline-dark btn-sm">+</button>
+                                </div>
+
+                                <!-- Remove -->
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                Remove
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseTwo" 
+                aria-expanded="false" aria-controls="collapseTwo">
+                Classic Superstack Sandwich
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row align-items-center g-3">
+                        <!-- Image -->
+                        <div class="col-12 col-md-auto">
+                            <img src="images/classic_superstack_sandwich.png" alt="Classic Superstack Sandwich" width="200">
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-12 col-md">
+                            <p class="mb-1 fw-semibold">Classic Superstack Sandwich</p>
+                            <p class="mb-0 text-muted">
+                                Fried chicken breast, hash brown, cheddar cheese, fresh pickles & creamy mayo in a soft brioche bun.
+                            </p>
+                        </div>
+
+                        <!-- Price & Controls -->
+                        <div class="col-12 col-md-auto text-md-end">
+                            <div class="fw-bold fs-5 mb-2">£18.98</div>
+
+                            <div class="d-flex justify-content-md-end align-items-center gap-2">
+                                <!-- Quantity controls -->
+                                <div class="btn-group" role="group" aria-label="Quantity controls">
+                                <button type="button" class="btn btn-outline-dark btn-sm">−</button>
+                                <button type="button" class="btn btn-light btn-sm" disabled>2</button>
+                                <button type="button" class="btn btn-outline-dark btn-sm">+</button>
+                                </div>
+
+                                <!-- Remove -->
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                Remove
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" 
+                data-bs-toggle="collapse" data-bs-target="#collapseThree" 
+                aria-expanded="false" aria-controls="collapseThree">
+                The Full Feastin' Sharer
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="row align-items-center g-3">
+                        <!-- Image -->
+                        <div class="col-12 col-md-auto">
+                            <img src="images/full_feasting_sharers.png" alt="The Full Feasting sharer" class="rounded float-start" width="200">
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-12 col-md">
+                            <p class="mb-1 fw-semibold">The Full Feastin' Sharer</p>
+                            <p class="mb-0 text-muted">
+                                14 Tenders, 8 Boneless, 8 Hot Wings, 4 regular Fries & your choice of 2 regular Sides & Big Dip. Served with a large bottle of Drink.
+                            </p>
+                        </div>
+
+                        <!-- Price & Controls -->
+                        <div class="col-12 col-md-auto text-md-end">
+                            <div class="fw-bold fs-5 mb-2">£29.99</div>
+
+                            <div class="d-flex justify-content-md-end align-items-center gap-2">
+                                <!-- Quantity controls -->
+                                <div class="btn-group" role="group" aria-label="Quantity controls">
+                                <button type="button" class="btn btn-outline-dark btn-sm">−</button>
+                                <button type="button" class="btn btn-light btn-sm" disabled>1</button>
+                                <button type="button" class="btn btn-outline-dark btn-sm">+</button>
+                                </div>
+
+                                <!-- Remove -->
+                                <button type="button" class="btn btn-outline-danger btn-sm">
+                                Remove
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 style="text-align: center;">Complete Your Order<span class="badge text-bg-secondary"></span></h2>
+
+    <!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="kickback_wrap.png" class="card-img-top" alt="Kickback Wrap">
+                <div class="card-body">
+                    <h5 class="card-title">Kickback Wrap</h5>
+                    <p class="card-text">2 Chicken Tenders drizzled with tangy, smoky Kickback sauce, topped with lettuce & tomato, wrapped in a soft, toasted tortilla.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="3_spicy_tenders.png" class="card-img-top" alt="3 Spicy Tenders">
+                <div class="card-body">
+                    <h5 class="card-title">3 Spicy Tenders</h5>
+                    <p class="card-text">3 Chicken breast fillets and a dip</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="mega_cheese_dip.png" class="card-img-top" alt="The Mega Cheese Dip">
+                <div class="card-body">
+                    <h5 class="card-title">The Mega Cheese Dip</h5>
+                    <p class="card-text">Velvety & warm cheddar cheese sauce. Served in our Mega size cup.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+
+    <div class="card-group">
+        <div class="card">
+            <img src="images/kickback_wrap.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Kickback Wrap</h5>
+            <p class="card-text">2 Chicken Tenders drizzled with tangy, smoky Kickback sauce, topped with lettuce & tomato, wrapped in a soft, toasted tortilla.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/3_spicy_tenders.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">3 Spicy Tenders</h5>
+            <p class="card-text">3 Chicken breast fillets and a dip.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/mega_cheese_dip.png" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Mega Cheese Dip</h5>
+            <p class="card-text">Velvety & warm cheddar cheese sauce. Served in our Mega size cup.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card text-center" style="max-width:400px; margin:auto;">
+        <div class="card-header">
+            Order Summary
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Your Items</h5>
+            <p class="card-text mb-1 d-flex justify-content-between">
+                <span>Subtotal</span>
+                <span>£61.96</span>
+            </p>
+
+            <p class="card-text mb-1 d-flex justify-content-between">
+                <span>Delivery Fee</span>
+                <span>£4.99</span>
+            </p>
+
+            <hr>
+
+            <p class="fw-bold d-flex justify-content-between">
+                <span>Total</span>
+                <span>£66.95</span>
+            </p>
+            <a href="#" class="btn btn-primary w-100">Checkout</a>
+        </div>
+
+        <div class="card-footer text-body-secondary">
+            Ready to purchase
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <section>
+            <div class="col-left"></div>
+            <div class="col-right"></div>
+        </section>
+        <header></header>
+    </div>
+
+
+    <div class="container second">
+        <section>
+            <div class="col-left"></div>
+            <div class="col-right"></div>
+        </section>
+
+
+    </div>
+
+
+</main>
+
+
+
+
+
+
+<footer>
+    2026 original content
+</footer>
+
+
+</body>
+</html>

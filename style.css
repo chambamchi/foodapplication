@@ -9,14 +9,17 @@
     padding: 0;
 } 
 
-html {
+html, body {
     font-size: 12pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(59, 7, 57);
+    height: 100%;
 }
 
 main {
-    background-color: wheat;
+    background-color: rgb(59, 7, 57);
+    margin: 0;
+    padding: 0;
 }
 
 .container-fluid {
@@ -25,18 +28,56 @@ main {
     display: flex;
     justify-content: flex-end; /*aligns links at the very end of nav bar*/
     align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(59, 7, 57);
 }
 
 
 footer {
     margin-bottom: 0;
     padding-bottom: 0;
-    position: fixed;
+    position: fixed; 
+    background-color: #000000;
 }
 
 h1 {
     text-align: center;
 }
+
+
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
 
 
 
@@ -97,31 +138,78 @@ button {
 
 
 
-/*.container {
+
+
+
+
+
+
+
+
+/* IMG GRID WHEN ON LARGER SCREEN */
+
+.image-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.panel {
+    height: 300px;
     display: flex;
-}*/
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
 
-header {
-    flex: 1;
-    background-color: orange;
-    border-radius: 2em;
+.panel h3 {
+    position: relative;
+    z-index: 2;
 }
 
-section {
-    flex: 4;
-    gap: 1em;
-    border-radius: 2em;
+.panel1 {background-image: url("images/asiancuisine.jpg");}
+.panel2 {background-image: url("images/africandish.jpg");}
+.panel3 {background-image: url("images/morleys.jpg");}
+
+
+
+
+/* IMG GRID WHEN ON SMALLER SCREEN */
+
+@media screen and (max-width: 900px) {
+
+.image-section {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: 1fr;
+}
+
+.panel {
+    height: 300px;
     display: flex;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+/* Keep text above overlay */
+.panel h3 {
+    position: relative;
+    z-index: 2;
 }
 
-.col-left {
-    flex: 2;
-    background-color: rgb(97, 97, 218);
-    border-radius: 2em;
-}
+/* Individual background images */
+.panel1 {background-image: url("images/asiancuisine.jpg");}
+.panel2 {background-image: url("images/africandish.jpg");}
+.panel3 {background-image: url("images/morleys.jpg");}
 
-.col-right {
-    flex: 1;
-    background-color: rgb(73, 153, 73);
-    border-radius: 2em;
 }
